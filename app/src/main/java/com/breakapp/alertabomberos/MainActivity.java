@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void autenticateUser() {
 
-        String url = "http://breakappgames.com/test/validate.php";
+        String url = "http://breakappgames.com/bomberos/validate.php";
         StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
