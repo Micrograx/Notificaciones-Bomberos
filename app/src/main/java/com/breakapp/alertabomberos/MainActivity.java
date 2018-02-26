@@ -1,6 +1,8 @@
 package com.breakapp.alertabomberos;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.nfc.Tag;
@@ -32,6 +34,7 @@ import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
@@ -92,18 +95,41 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
 
-                Toast.makeText(getApplicationContext(),response,
-                        Toast.LENGTH_LONG).show();
-
                 try {
                     JSONObject obj = new JSONObject(response);
 
                     int error = obj.getInt("error");
 
                     if (error == 0){
-                        Log.d("RESULT","succes");
-                    } else {
-                        Log.d("RESULT","ERROR: " + error);
+
+                        String filename = "localidad";
+                        String fileContents = selectedLocalidad;
+                        FileOutputStream outputStream;
+
+                        try {
+                            outputStream = openFileOutput(filename, Context.MODE_PRIVATE);
+                            outputStream.write(fileContents.getBytes());
+                            outputStream.close();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+
+
+                        Globals g = (Globals) getApplication();
+                        g.setData(selectedLocalidad);
+
+                        Intent intent = new Intent(getApplicationContext(), Logged_In.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_TASK_ON_HOME);
+                        startActivity(intent);
+                    } else if(error == 1){
+                        Toast.makeText(getApplicationContext(),"Contraseña incorrecta",
+                                Toast.LENGTH_LONG).show();
+                    } else if(error == 2){
+                        Toast.makeText(getApplicationContext(),"Verifique la contraseña con el cuartelero",
+                                Toast.LENGTH_LONG).show();
+                    } else if(error == 3){
+                        Toast.makeText(getApplicationContext(),"Ha ocurrido un error, intente más tarde",
+                                Toast.LENGTH_LONG).show();
                     }
 
                 } catch (JSONException e) {
