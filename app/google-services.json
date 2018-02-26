@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "64076436094",
+    "firebase_url": "https://aleertas-bomberos.firebaseio.com",
+    "project_id": "aleertas-bomberos",
+    "storage_bucket": "aleertas-bomberos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64076436094:android:ebda593d17b06955",
+        "android_client_info": {
+          "package_name": "com.breakapp.alertabomberos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64076436094-5c8fkflj0eki8ht3t89ras8dqcsmk97m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.breakapp.alertabomberos",
+            "certificate_hash": "c49008ec19b0ee964bbea6cd0cbf2a2b142afe36"
+          }
+        },
+        {
+          "client_id": "64076436094-j7q7sadvbsssvhpj0o5e41neu44nnmoo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.breakapp.alertabomberos",
+            "certificate_hash": "101f8eae854ab01a76cc51ca9589742d6bf303bd"
+          }
+        },
+        {
+          "client_id": "64076436094-7e3kv48t2rlp5pevqq24gb6t52c8v3ht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.breakapp.alertabomberos",
+            "certificate_hash": "69005ee0d26032da909c47995939acfb18acb9af"
+          }
+        },
+        {
+          "client_id": "64076436094-93ukemnahkabl8a0lhg16uekh99n8nhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSRFpuiiwMQWDF7z9RCIn_-AEe5sTLN8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64076436094-ftkm8igo8ed6pillqs44j2po3iqgnig0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BreakApp.Bomberos-Emergencias-R3",
+                "app_store_id": "1188503729"
+              }
+            },
+            {
+              "client_id": "64076436094-93ukemnahkabl8a0lhg16uekh99n8nhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

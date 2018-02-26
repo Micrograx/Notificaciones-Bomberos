@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grupos">
+        <item>Grupo Semanal 1</item>
+        <item>Grupo Semanal 2</item>
+        <item>Ambos Grupos</item>
+    </string-array>
+</resources>
