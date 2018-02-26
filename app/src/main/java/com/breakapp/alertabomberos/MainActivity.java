@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void getList() {
 
-        String url = "http://breakappgames.com/test/get_list.php";
+        String url = "http://breakappgames.com/bomberos/get_list.php";
         JsonArrayRequest get_localidades = new JsonArrayRequest(Request.Method.GET, url,null, new Response.Listener<JSONArray>() {
             @Override
             public void onResponse(JSONArray response) {
