@@ -1,19 +1,14 @@
-package com.breakapp.alertabomberos;
+package com.breakapp.notificaciones_bomberos;
 
-import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.Volley;
 import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.io.FileOutputStream;
@@ -34,7 +29,10 @@ public class Logged_In extends AppCompatActivity{
 
         Globals g = (Globals)getApplication();
         String localidad = g.getData();
-        text.setText("Bienvenido, ya esta registrado para recibir las notificaciones de " + localidad + ", ya no es necesario que ingrese a la aplicacion, las llamadas llegaran automaticamente a su dispositivo.");
+        text.setText("Bienvenido, ya esta registrado para recibir las notificaciones de "+ localidad +", ya no" +
+                " debe ingresar a la app a menos que desee cambiar el cuartel al que se sumó previamente." +
+                " Las llamadas de alerta llegaran automáticamente a su dispositivo, muchas gracias por elegir " +
+                "nuestro servicio.");
         localidad = localidad.replace(" ","-");
 
         FirebaseMessaging.getInstance().subscribeToTopic(localidad);
@@ -71,6 +69,12 @@ public class Logged_In extends AppCompatActivity{
 
             }
         });
+
+    }
+    @Override
+    public void onBackPressed() {
+
+        moveTaskToBack(true);
 
     }
 

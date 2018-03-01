@@ -73,6 +73,58 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64076436094:android:6c078cba1890b884",
+        "android_client_info": {
+          "package_name": "com.breakapp.notificaciones_bomberos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64076436094-vmeehogkltfomft85e87go75li7if0ei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.breakapp.notificaciones_bomberos",
+            "certificate_hash": "c49008ec19b0ee964bbea6cd0cbf2a2b142afe36"
+          }
+        },
+        {
+          "client_id": "64076436094-93ukemnahkabl8a0lhg16uekh99n8nhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSRFpuiiwMQWDF7z9RCIn_-AEe5sTLN8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64076436094-ftkm8igo8ed6pillqs44j2po3iqgnig0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BreakApp.Bomberos-Emergencias-R3",
+                "app_store_id": "1188503729"
+              }
+            },
+            {
+              "client_id": "64076436094-93ukemnahkabl8a0lhg16uekh99n8nhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

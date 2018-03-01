@@ -1,4 +1,4 @@
-package com.breakapp.alertabomberos;
+package com.breakapp.notificaciones_bomberos;
 
 import android.app.Application;
 

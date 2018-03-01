@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
     defaultConfig {
-        applicationId "com.breakapp.alertabomberos"
+        applicationId 'com.breakapp.notificaciones_bomberos'
         minSdkVersion 14
         targetSdkVersion 23
-        versionCode 6
-        versionName '1.2'
+        versionCode 11
+        versionName '2.0.4'
     }
     buildTypes {
         release {
@@ -21,15 +21,15 @@ android {
 }
 
 dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:support-core-ui:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
     implementation 'com.google.firebase:firebase-messaging:11.0.4'
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:8.8.1'
     compile 'com.android.volley:volley:1.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support:design:23.4.0'
-
     annotationProcessor 'com.jakewharton:butterknife:8.8.1'
 }
 

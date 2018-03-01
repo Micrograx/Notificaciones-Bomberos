@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.breakapp.alertabomberos">
+    package="com.breakapp.notificaciones_bomberos">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -42,7 +42,7 @@
     </service>
 
     <service
-        android:name="com.breakapp.alertabomberos.MyFireBaseInstanceIDService"
+        android:name="com.breakapp.notificaciones_bomberos.MyFireBaseInstanceIDService"
         android:exported="false">
         <intent-filter>
             <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />

@@ -12,6 +12,7 @@
     <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
         <item name="android:textColor">@color/my_spinner_text_color</item>
         <item name="android:textSize">20dp</item>
+        <item name="android:popupBackground">#000</item>
     </style>
 
 </resources>
